@@ -1,0 +1,112 @@
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+header{
+    background-color: transparent;
+}
+
+.container-header{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+.perfil{
+    height: 30px;
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+    padding: 1px;
+}
+.logo{
+    margin: 10px;
+    width: 125px;
+    color: var(--vermelho);
+    font-family: Arial Black;
+}
+nav{
+    padding-top: 2px;
+}
+nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+nav a:hover{
+    color: #fff;
+}
+/* .container{
+    margin-left: 20px;
+} */
+
+/* filme principal */
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)100%), url('/Netflix-clone/assets/img/capa-house.jpg');
+    height: 600px;
+    width:100%;
+    background-size:cover;   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.filme-principal .container{
+    margin-left: 15px;
+}
+.botao{
+    background-color: rgba(0, 0, 0, .5);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15pxw;
+    font-size: 12px;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+    
+}
+.botao i{
+    margin-right: 8px;
+}
+
+/* carousel */
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrossel-filmes{
+    margin-top: 20px;
+}
+.secoes-carrossel{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
